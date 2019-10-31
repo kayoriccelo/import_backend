@@ -1,4 +1,4 @@
-# Imports Backend
+# Validator Backend
  Aplicação onde valida arquivos csv conforme leiaute.
        
            
@@ -14,7 +14,7 @@
        psql -l
  - ###### Acessando ambiente com psql e criando database
        psql
-       CREATE DATABASE imports_file;
+       CREATE DATABASE validator_file;
  - ###### Conectando database e visualizando tabelas
        \c imports_file
        \dt
@@ -48,7 +48,7 @@
        sudo apt-get install python3-pip
        sudo pip3 install Psycopg2
  - ###### Instalando dependências
-       sudo chmod 777 -R imports_backend
+       sudo chmod 777 -R validator_backend
        pip install -r requirements.txt
  - ###### Iniciando serviço:
        python manage.py migrate
